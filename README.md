@@ -1,4 +1,4 @@
-# ![fas21](projects/slab/raw/images/fas21.png) Fas21
+# ![fas21](projects/slab/pan/raw/images/fas21.png) Fas21
 
 Multi-platform blackjack game with fast deal feature. Formerly known as Panopset Blackjack, but rebranded for these
 reasons:
