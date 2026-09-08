@@ -11,14 +11,14 @@ reasons:
 
 Here are the other claims:
 
-* It is your responsibility to independently verify the basic strategy [table](projects/fas21engine/src/main/resources/basic.txt) used by this game.
+* It is your responsibility to independently verify the basic strategy [table](projects/shoring/fas21/fas21engine/src/main/resources/basic.txt) used by this game.
   * Fas21 is open source, so you are free to make corrections.
 * I have seen many people at the tables who have not memorized the basic strategy. They may as well play the
 slots. Fas21 might help people, who decide to blackjack, last longer at the tables.
 
 
 ## Projects
-* [fas21engine](projects/fas21engine/README.md)
+* [fas21engine](projects/shoring/fas21/fas21engine/README.md)
   * Data driven counting systems and basic strategy charts.
   * Automatic deal, to test both counting and betting strategies at tens of thousands of hands per second.
   * Fast deal configuration option, to allow users to skip seeing the results of each hand, just whether or not they made a basic strategy mistake.  I only wrote this, because I wanted this feature.
