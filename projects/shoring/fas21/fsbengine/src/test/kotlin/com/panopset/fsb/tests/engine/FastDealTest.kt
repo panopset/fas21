@@ -1,0 +1,47 @@
+package com.panopset.fsb.tests.fas21engine
+
+import com.panopset.fsb.engine.*
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Test
+
+class FastDealTest {
+    @Test
+    fun test() {
+        val bge = BlackjackGameEngine(object: BlackjackConfigBaseTest() {
+            override fun isFastDeal(): Boolean {
+                return true
+            }
+        })
+        verifyRecommendedActionsFastDeal(
+            bge, arrayOf(CMD_DEAL, CMD_DOUBLE), dealerBlackjack(),
+            dealerSoft17_0(), doubleDown()
+        )
+    }
+
+    @Test
+    fun testMistake() {
+        val bge = BlackjackGameEngine(object: BlackjackConfigBaseTest() {
+            override fun isFastDeal(): Boolean {
+                return true
+            }
+        })
+        bge.getShoe().stackTheDeckFromList(stackSplit6_v_2())
+        bge.exec(CMD_DEAL)
+        bge.exec(CMD_DOUBLE)
+        Assertions.assertEquals(1, bge.metrics.mistakeCount)
+    }
+
+    @Test
+    @Throws(Exception::class)
+    fun testAutomatic() {
+        val bge = BlackjackGameEngine(object: BlackjackConfigBaseTest() {
+            override fun isFastDeal(): Boolean {
+                return true
+            }
+        })
+        bge.exec(CMD_AUTO)
+        synchronized(bge) { bge.waitMillis(100) }
+        bge.exec(CMD_AUTO)
+        Assertions.assertEquals(0, bge.metrics.mistakeCount)
+    }
+}

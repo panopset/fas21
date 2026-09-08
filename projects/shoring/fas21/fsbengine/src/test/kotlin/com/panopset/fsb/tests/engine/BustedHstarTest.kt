@@ -1,0 +1,38 @@
+package com.panopset.fsb.tests.fas21engine
+
+import com.panopset.fsb.engine.BlackjackGameEngine
+import com.panopset.fsb.engine.*
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Test
+
+class BustedHstarTest {
+    @Test
+    fun testSingleDeck() {
+        val bge = BlackjackGameEngine(object : BlackjackConfigBaseTest() {
+            override fun getDecks(): Int {
+                return 1
+            }
+        })
+        verifyRecommendedActions(bge, arrayOf(CMD_DEAL, CMD_DOUBLE), bustedHstarSingle())
+        performDeviantActions(bge, arrayOf(CMD_DEAL, CMD_HIT, CMD_HIT), bustedHstarSingle())
+        Assertions.assertEquals(
+            "Busted",
+            bge.getCycle().players[0].hands[0].message
+        )
+    }
+
+    @Test
+    fun test() {
+        val bge = BlackjackGameEngine(object : BlackjackConfigBaseTest() {
+            override fun getDecks(): Int {
+                return 6
+            }
+        })
+        verifyRecommendedActions(bge, arrayOf(CMD_DEAL, CMD_HIT, CMD_STAND), bustedHstarSingle())
+        performDeviantActions(bge, arrayOf(CMD_DEAL, CMD_HIT, CMD_HIT), bustedHstarSingle())
+        Assertions.assertEquals(
+            "Busted",
+            bge.getCycle().players[0].hands[0].message
+        )
+    }
+}

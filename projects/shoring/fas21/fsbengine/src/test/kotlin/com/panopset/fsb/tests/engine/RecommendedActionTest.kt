@@ -1,0 +1,25 @@
+package com.panopset.fsb.tests.fas21engine
+
+import com.panopset.fsb.engine.BlackjackGameEngine
+import com.panopset.fsb.engine.*
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Test
+
+class RecommendedActionTest : SessionTest() {
+    @Test
+    fun test() {
+        val bge = BlackjackGameEngine(BlackjackConfigSingleDeckTest)
+        bge.getShoe().stackTheDeckFromList(soft13vs4())
+        bge.exec(CMD_DEAL)
+        Assertions.assertEquals(CMD_DOUBLE, bge.getCycle().getRecommendedAction())
+        bge.exec(CMD_SPLIT)
+        Assertions.assertEquals(
+            "Can't split cards that don't have the same face",
+            bge.dealerMessage
+        )
+        bge.exec(CMD_STAND)
+        Assertions.assertEquals("soft 2  3  4  5  6  7  8  9  T  A ", bge.mistakeHeader)
+        Assertions.assertEquals(" 13  H  H  H* Dh Dh H  H  H  H  H ", bge.mistakeMessage)
+        Assertions.assertEquals(CMD_STAND, bge.getLatestSnapshot().action)
+    }
+}
