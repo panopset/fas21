@@ -10,7 +10,7 @@ ${@f index.html}
 </head>
 <body>
     <header>
-        <h1>Fas21 Blackjack Trainer</h1>
+        <h1>Fas21 Blackjack</h1>
     </header>
     <main>
         ${downloadsTable}
@@ -18,4 +18,4 @@ ${@f index.html}
     <footer>
         <p>&copy; 2026 Panopset Software Company. All rights reserved.</p>
     </footer>
-</body>
+</body></html>
