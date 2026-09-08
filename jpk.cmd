@@ -52,4 +52,4 @@ set c=jpackage ^
   --type app-image
 %c%
 
-target\standalone\fsb\gi.exe appwin
+target\standalone\fas2\gi.exe appwin

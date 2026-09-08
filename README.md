@@ -5,7 +5,7 @@ reasons:
 
 * Gambling is stupid, and the author did not want Panopset software to continue to be directly besmirched with a gambling app.
 * Fas21 better reflects the "fast deal" feature, that separates this blackjack app from all the others.
-* While still indirectly besmirching Panopset, fas21 showcases how you may utilize Panopset products to publish your own apps and web sites.
+* While still indirectly besmirching Panopset, fas21 showcases how you may utilize Panopset products to publish your own apps and websites.
 
 # The first claim about this game is that it will only lead you to ruin whether, or not it has any bugs.
 
