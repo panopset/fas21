@@ -1,4 +1,2 @@
 #!/bin/bash
-mvn -f projects/fsbengine/ clean install
-mvn -f projects/fsbdesk/ clean install
-
+mvn -f projects/shoring/fas21 clean install
