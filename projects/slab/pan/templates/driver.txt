@@ -16,8 +16,11 @@ ${@f index.html}
     </header>
     <main>
         ${downloadsTable}
+        <p>
+        <a href="https://github.com/panopset/fas21">Source.</a>
+        </p>
     </main>
     <footer>
-        <p>&copy; 2026 Panopset Software Company. All rights reserved.</p>
+        <p>&copy; 2026 <a href="https://panopset.com">Panopset</a> Software Company. All rights reserved.</p>
     </footer>
 </body></html>
