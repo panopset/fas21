@@ -15,10 +15,18 @@ ${@f index.html}
         <h1>Fas21 Blackjack</h1>
     </header>
     <main>
+    <p>
+    <h1>
+    The first claim about this game is that it will only lead you to ruin whether, or not it has any bugs.
+     </h1>
+     <p>
+     See the <a href="https://github.com/panopset/fas21">source</a> code for more information. Better yet, navigate
+     away, don't ever enter a casino in your life. If you absolutely have to go, and want to play blackjack,
+     learn the basic strategy at least. Fas21 Blackjack can help you do just that.
+     </p><p>
+    Downloads:
+    </p>
         ${downloadsTable}
-        <p>
-        <a href="https://github.com/panopset/fas21">Source.</a>
-        </p>
     </main>
     <footer>
         <p>&copy; 2026 <a href="https://panopset.com">Panopset</a> Software Company. All rights reserved.</p>

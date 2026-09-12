@@ -1,6 +1,7 @@
 # ![fas21](projects/slab/pan/raw/images/fas21.png) Fas21
 
-Multi-platform blackjack game with fast deal feature. Formerly known as Panopset Blackjack, but rebranded for these
+This is the source code for [fas21.com](https://fas21.com), a 
+multi-platform blackjack game with fast deal feature. Formerly known as Panopset Blackjack, but rebranded for these
 reasons:
 
 * Gambling is stupid, and the author did not want Panopset software to continue to be directly besmirched with a gambling app.
