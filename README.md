@@ -1,6 +1,6 @@
-# ![fas21](projects/slab/pan/raw/images/fas21.png) Fas21
+# Fas21 Blackjack
 
-This is the source code for [fas21.com](https://fas21.com), a 
+This is the source code for [fas21.com](https://fas21.com) Blackjack, a 
 multi-platform blackjack game with fast deal feature. Formerly known as Panopset Blackjack, but rebranded for these
 reasons:
 
