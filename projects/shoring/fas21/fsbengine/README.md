@@ -1,9 +1,7 @@
 # blackjack
 Multi-platform blackjack game with fast deal feature.
 
-# [blackjackEngine](dox/site/blackjackEngine/index.html)
-
-Blackjack engine used for Panopset Blackjack.
+Blackjack engine used for Fas21 Blackjack.
 
 * Data driven counting systems and basic strategy charts.
 * Automatic deal, to test both counting and betting strategies at tens of thousands of hands per second.
@@ -11,15 +9,15 @@ Blackjack engine used for Panopset Blackjack.
 
 # License
 
-Panopset blackjackEngine is open source software, under the [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html), with the following
+Fas21 blackjackEngine is open source software, under the [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html), with the following
 additional provisions:
 
-## Panopset Provision 1
+## Fas21 Provision 1
 
-Under no circumstances is Panopset blackjackEngine, or any of its derivatives, to be used to drive a real money game.
+Under no circumstances is Fas21 blackjack, or any of its derivatives, to be used to drive a real money game.
 The sole purpose is to help people, who decide they want to play blackjack, last a little longer at the tables.
 
-## Panopset Provision 2
+## Fas21 Provision 2
 
 Prominently displayed in the end product description somewhere must a link to 
 [Gamblers Anonymous](http://gamblersanonymous.com), 
