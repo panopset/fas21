@@ -49,6 +49,10 @@ It will be enough to trust in cosmic justice, should you foolishly decide to ign
 
 ## Scripts
 
-| Linux/Mac    | Windows     | Purpose                                           |
-|--------------|-------------|---------------------------------------------------|
-| ./publish.sh | publish.cmd | Publish fas21 locally in ~/projects/fas21/deploy. |
+| Linux/Mac   | Windows    | Purpose                                            |
+|-------------|------------|----------------------------------------------------|
+| ./all.sh    | all.cmd    | Create fas21 locally in ~/projects/fas21/deploy.   |
+| ./run.sh    | TODO       | Run fas21 from local app created in all.sh.        |
+| ./update.sh | update.cmd | Update git.                                        |
+
+This project is deployable using [Panopset](https://panopset.com) dash.

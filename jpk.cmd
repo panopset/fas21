@@ -26,6 +26,7 @@ set c=jpackage ^
   -n fas21 ^
   -p %MP%;%JAVA_HOME%\jmods ^
   -m com.panopset.fsb.fsbdesk.games/com.panopset.fsb.fsbdesk.games.Blackjack ^
+  --java-options "--enable-native-access=javafx.graphics" ^
   --vendor "Panopset" ^
   --copyright "1996-2026 Karl Dinwiddie" ^
   --license-file LICENSE ^
@@ -42,6 +43,7 @@ set c=jpackage ^
   -n fas21 ^
   -p %MP%;%JAVA_HOME%\jmods ^
   -m com.panopset.fsb.fsbdesk.games/com.panopset.fsb.fsbdesk.games.Blackjack ^
+  --java-options "--enable-native-access=javafx.graphics" ^
   --vendor "Panopset" ^
   --copyright "1996-2026 Karl Dinwiddie" ^
   --description "Fas21 blackjack trainer." ^
